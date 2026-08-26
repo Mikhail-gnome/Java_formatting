@@ -53,7 +53,7 @@ public class Ex04FormattedOutput {
         // - %x – шестнадцатеричное число
 
         // Привет, Имя!
-        String name = "Сергей";
+        String name = "Имя";
         // System.out.println("Привет, " + name + "!");
         System.out.printf("Привет, %s!\n", name);
         int x = 10;
