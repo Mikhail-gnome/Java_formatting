@@ -15,7 +15,7 @@ String.format() - для создания форматированной стр�
 Примеры использования
 Вывод строк:
 
-String name = "Сергей";
+String name = "Имя";
 System.out.printf("Привет, %s!", name);
 
                   
