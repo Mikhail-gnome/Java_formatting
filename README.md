@@ -1,56 +1,56 @@
 # Java_formatting
 **Форматирование строк и чисел в Java**
 
-Форматированный вывод в Java
-*В Java существует два основных способа форматированного вывода:
+Форматированный вывод в Java <br>
+*В Java существует два основных способа форматированного вывода: <br>
+ <br>
+System.out.printf() - для прямого вывода в консоль <br>
+String.format() - для создания форматированной строки <br>
+<br>
+Основные спецификаторы формата <br>
+%s - для строк <br>
+%d - для целых чисел <br>
+%f - для чисел с плавающей точкой <br>
+%x - для шестнадцатеричных чисел <br>
+Примеры использования <br>
+Вывод строк: <br>
+<br>
+String name = "Имя"; <br>
+System.out.printf("Привет, %s!", name); <br>
+<br>
+                  
+Вывод чисел: <br>
 
-System.out.printf() - для прямого вывода в консоль
-String.format() - для создания форматированной строки
-
-Основные спецификаторы формата
-%s - для строк
-%d - для целых чисел
-%f - для чисел с плавающей точкой
-%x - для шестнадцатеричных чисел
-Примеры использования
-Вывод строк:
-
-String name = "Имя";
-System.out.printf("Привет, %s!", name);
+int x = 10, y = 5; <br>
+int result = x + y; <br>
+System.out.printf("%d + %d = %d%n", x, y, result); <br>
 
                   
-Вывод чисел:
+Шестнадцатеричный формат: <br>
 
-int x = 10, y = 5;
-int result = x + y;
-System.out.printf("%d + %d = %d%n", x, y, result);
-
-                  
-Шестнадцатеричный формат:
-
-int hex = 0xFF;
-System.out.printf("Десятичное: %d, Шестнадцатеричное: %x%n", hex, hex);
+int hex = 0xFF; <br>
+System.out.printf("Десятичное: %d, Шестнадцатеричное: %x%n", hex, hex); <br>
 
                   
-String.format()
-Для сохранения форматированной строки в переменную используется метод String.format():
+String.format() <br>
+Для сохранения форматированной строки в переменную используется метод String.format(): <br>
 
-String output = String.format("%d + %d = %d", x, y, result);
-System.out.println(output);
+String output = String.format("%d + %d = %d", x, y, result); <br>
+System.out.println(output); <br>
 
                   
-Особенности
-printf не делает автоматический перевод строки в отличие от println
-Можно использовать несколько спецификаторов в одной строке
-Весь код
-public class Ex04FormattedOutput {
-    public static void main(String[] args) {
-        // System.out.printf(String format, Object... args);
-        // - %s – строка
-        // - %d – целое число
-        // - %f – число с плавающей запятой
-        // - %t – дата/время
-        // - %x – шестнадцатеричное число
+Особенности <br>
+printf не делает автоматический перевод строки в отличие от println <br>
+Можно использовать несколько спецификаторов в одной строке <br>
+Весь код <br>
+public class Ex04FormattedOutput { <br>
+    public static void main(String[] args) { <br>
+        // System.out.printf(String format, Object... args); <br>
+        // - %s – строка <br>
+        // - %d – целое число <br>
+        // - %f – число с плавающей запятой  <br>
+        // - %t – дата/время <br>
+        // - %x – шестнадцатеричное число <br>
 
         // Привет, Имя!
         String name = "Имя";
